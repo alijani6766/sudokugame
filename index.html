@@ -2,6 +2,7 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
+
 <title>Sudoku Game</title>
 
 <link rel="stylesheet" href="style.css">
@@ -12,20 +13,33 @@
 
 <h1>سودوکو</h1>
 
+
 <div id="menu">
 
-<h2>انتخاب سختي</h2>
+<h2>انتخاب سختی</h2>
 
 <button onclick="startGame('easy')">آسان</button>
 <button onclick="startGame('medium')">متوسط</button>
 <button onclick="startGame('hard')">سخت</button>
 
+
+<p id="records"></p>
+
 </div>
+
 
 
 <div id="game" style="display:none">
 
+
+<h3>
+⏱ زمان:
+<span id="timer">00:00</span>
+</h3>
+
+
 <div id="board"></div>
+
 
 
 <div id="numbers">
@@ -33,23 +47,38 @@
 <button onclick="setNumber(1)">1</button>
 <button onclick="setNumber(2)">2</button>
 <button onclick="setNumber(3)">3</button>
+<br>
+
 <button onclick="setNumber(4)">4</button>
 <button onclick="setNumber(5)">5</button>
 <button onclick="setNumber(6)">6</button>
+<br>
+
 <button onclick="setNumber(7)">7</button>
 <button onclick="setNumber(8)">8</button>
 <button onclick="setNumber(9)">9</button>
 
+<br>
+
+<button onclick="clearNumber()">پاک کردن</button>
+
+
 </div>
 
 
-<button onclick="checkGame()">بررسي جواب</button>
+
+<button onclick="checkGame()">
+بررسی جواب
+</button>
+
 
 
 </div>
+
 
 
 <script src="script.js?v=3"></script>
+
 
 </body>
 </html>
